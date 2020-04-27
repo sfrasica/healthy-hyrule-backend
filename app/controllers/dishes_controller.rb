@@ -17,12 +17,9 @@ class DishesController < ApplicationController
         
     end
 
-    def create
-        dish = Dish.create(dishes_params)
 
-        render json: dish
-    end
-
+    private
+    
     def dishes_params
         params.require(:dish).permit(:name)
     end

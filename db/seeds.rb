@@ -10,28 +10,28 @@ Dish.destroy_all
 Ingredient.destroy_all
 
 
-        # ingredients: ["Bird Egg, Hylian Rice"],
+        # ingredients: ["Bird Egg, Hylian Rice"]
     fried_egg_and_rice = Dish.create(name: "Fried Egg and Rice", description: "The soft egg yolk pairs well with the fresh rice in this simple dish.", image_url: "https://i.imgur.com/dcEw6lr.png")
     
 
-        # ingredients: ["Courser Bee Honey"],
+        # ingredients: ["Courser Bee Honey"]
     honey_candy = Dish.create(name: "Honey Candy", description: "A natural sweet, brimming with nutrition and made by stewing fresh honey.", image_url: "https://i.imgur.com/RhJi0g2.png")
     
-        # ingredients: ["Endura Carrot, Tabantha Wheat, Cane Sugar, Goat Butter"],
+        # ingredients: ["Endura Carrot, Tabantha Wheat, Cane Sugar, Goat Butter"]
         carrot_cake = Dish.create(name: "Carrot Cake", description: "Even those who don't like carrots tend to enjoy the mild sweetness of this cake.", image_url: "https://i.imgur.com/c0g4F5Y.png")
     
-        # ingredients: ["Raw Prime Meat, Armored Carp, Monster Extract"],
+        # ingredients: ["Raw Prime Meat, Armored Carp, Monster Extract"]
         monster_stew = Dish.create(name: "Monster Stew", description: "Meat and seafood simmered in monster extract. A savory dish despite its ingredients.", image_url: "https://i.imgur.com/7hjECJY.png")
     
         # ingredients: ["Fresh Milk"],
         warm_milk = Dish.create(name: "Warm Milk", description: "Make this by heating up some milk. Drink it before bed to ensure a good night's sleep.", image_url: "https://i.imgur.com/ouWatQH.png")
     
-        # ingredients: ["Spicy Pepper"],
+        # ingredients: ["Spicy Pepper"]
         spicy_sauteed_peppers = Dish.create(name: "Spicy Sautéed Peppers",
         description: "The spiciness of these sautéed peppers has been broken by the heat for a sweeter taste.",
         image_url: "https://i.imgur.com/he5Vepi.png")
    
-        # ingredients: ["Endura Shroom", "Rock Salt"],
+        # ingredients: ["Endura Shroom", "Rock Salt"]
         salt_grilled_mushrooms = Dish.create(name: "Salt-Grilled Mushrooms",description: "A basic mushroom dish made by lightly salting mushrooms and grilling them.", image_url: "https://i.imgur.com/EwG6e0d.png")
 
 
@@ -95,15 +95,7 @@ ingredients = [
     
 ]
 
-# dishes.each do |dish_hash|
 
-#     Dish.create(
-#         name: dish_hash[:name],
-#         description: dish_hash[:description],
-#         image_url: dish_hash[:image_url]
-#         #  ingredients: dish_hash[:ingredients]
-#     )
-# end
 
 ingredients.each do |ingredient_hash|
 

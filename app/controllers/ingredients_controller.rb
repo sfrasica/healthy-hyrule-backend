@@ -11,13 +11,10 @@ class IngredientsController < ApplicationController
         render json: ingredient #this is the response to the fetch
     end
 
-    def update
-        ingredient = Ingredient.find(id: params[:id])
-
-        render json: ingredient
+    def destroy
+        ingredient = Ingredient.find_by(id: params[:id])
+        ingredient.destroy
     end
-
-
 
     private
 
